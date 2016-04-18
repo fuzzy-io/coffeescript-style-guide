@@ -38,6 +38,7 @@ The details in this guide have been very heavily inspired by several existing st
     * [Extending Native Objects](#extending_native_objects)
     * [Exceptions](#exceptions)
     * [Annotations](#annotations)
+    * [Classes](#classes)
     * [The Magic Number](#magic_number)
     * [Miscellaneous](#miscellaneous)
 
@@ -422,6 +423,25 @@ Annotation types:
 - `REVIEW`: describe code that should be reviewed to confirm implementation
 
 If a custom annotation is required, the annotation should be documented in the project's README.
+
+<a name="classes"/>
+## Classes
+
+Use classes to organize code.
+
+A module should contain only one main class. The class should be the main export
+of the module.
+
+```coffeescript
+class Foo
+  # ...
+
+module.exports = Foo
+```
+
+Use CoffeeScript's `class` statement to declare classes. Use CoffeeScript syntax
+to declare members. Don't use Crockford classes where everything is declared in
+the constructor. It's OK if private members aren't really private.
 
 <a name="magic_number"/>
 ## The Magic Number
