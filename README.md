@@ -38,6 +38,7 @@ The details in this guide have been very heavily inspired by several existing st
     * [Extending Native Objects](#extending_native_objects)
     * [Exceptions](#exceptions)
     * [Annotations](#annotations)
+    * [The Magic Number](#magic_number)
     * [Miscellaneous](#miscellaneous)
 
 <a name="code_layout"/>
