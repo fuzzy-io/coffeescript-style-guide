@@ -38,6 +38,7 @@ The details in this guide have been very heavily inspired by several existing st
     * [Extending Native Objects](#extending_native_objects)
     * [Exceptions](#exceptions)
     * [Annotations](#annotations)
+    * [Helper Functions](#helper_functions)
     * [The Magic Number](#magic_number)
     * [Miscellaneous](#miscellaneous)
 
@@ -442,6 +443,19 @@ classes.
 If a function has more than 5-9 lines of code, consider grouping the code into
 helper functions, each of which is less than 5-9 lines long, and call those
 helper functions from your main function.
+
+<a name="helper_functions"/>
+## Helper Functions
+
+Use helper functions for code clarity. Some good signs that you may need
+helper functions:
+
+* A function is getting long (more than 5-9 lines of code)
+* blank lines or inline comments to group lines of code into blocks
+* similar, repeated blocks of code
+
+Helper functions should usually be [nested functions](https://en.wikipedia.org/wiki/Nested_function) because [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it). Promote to
+class members or their own class if needed.
 
 <a name="miscellaneous"/>
 ## Miscellaneous
