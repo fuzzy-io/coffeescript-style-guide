@@ -450,7 +450,7 @@ If a custom annotation is required, the annotation should be documented in the p
 <a name="magic_number"/>
 ## The Magic Number
 
-A classic psychological paper "(The Magical Number Seven, Plus or Minus Two)[https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two]"
+A classic psychological paper "[The Magical Number Seven, Plus or Minus Two](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two)"
 proposes that human beings can handle lists of about 7±2 items in short-term
 memory. Although later studies show that the principle is not universal, it is
 a convenient boundary for thinking about groups and hierarchies.
