@@ -514,6 +514,19 @@ console.log args... # Yes
 (a, b, c, rest...) -> # Yes
 ```
 
+Variables or properties that can have an object as a value should either have
+a valid object as that value, or `null`.
+
+```coffeescript
+jim = new Person()
+jim.address = new Address() # Yes
+jim.address = null # Yes
+jim.address = false # No
+jim.address = undefined # No
+jim.address = '' # No
+jim.address = {} # No
+```
+
 [coffeescript]: http://jashkenas.github.com/coffee-script/
 [coffeescript-issue-425]: https://github.com/jashkenas/coffee-script/issues/425
 [spine-js]: http://spinejs.com/
