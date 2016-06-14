@@ -30,6 +30,7 @@ The details in this guide have been very heavily inspired by several existing st
     * [Comments](#comments)
         * [Block Comments](#block_comments)
         * [Inline Comments](#inline_comments)
+        * [No Dead Code](#no_dead_code)
     * [Naming Conventions](#naming_conventions)
     * [Functions](#functions)
     * [Strings](#strings)
@@ -219,6 +220,21 @@ However, inline comments can be useful in certain scenarios:
   # Yes
   x = x + 1 # Compensate for border
 ```
+
+<a name="no_dead_code"/>
+### No Dead Code
+
+It is often convenient when debugging to "comment out" code to test different
+paths. *Do not* check in lines or blocks of commented-out code.
+
+We use a version control system, so we can see "the old way of doing it" using
+history commands.
+
+Dead code impedes code readability. It makes it hard to refactor -- do you move
+the dead code version when you move the working version? It ages poorly; usually
+there are other changes that make it impossible to uncomment the code and have
+it "just work". Dead code implies a lack of confidence in the working code. Was
+the dead code "better" in some way? Why did we comment it out, then?
 
 <a name="naming_conventions"/>
 ## Naming Conventions
